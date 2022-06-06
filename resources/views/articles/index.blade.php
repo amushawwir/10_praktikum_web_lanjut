@@ -1,5 +1,12 @@
 @extends('layouts.app')
 @section('content')
+
+    <div class="row">
+        <div style="margin: 0px 0px 0px 70px;">
+            <a class="btn btn-success" href="{{ route('cetak_pdf') }}"> Cetak PDF</a>
+        </div>
+    </div> <br>
+
     @if ($message = Session::get('success'))
         <div class="alert alert-success">
             <p>{{ $message }}</p>
